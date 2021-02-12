@@ -21,6 +21,7 @@ const input = (props) => {
                            <option key={option.value} value={option.value}>{option.displayValue}</option>
                        ))} 
                     </select>)
+            break;
         default:
             inputElement = <input className={classes.InputElement}  {...props.elementConfig} value={props.value} onChange={props.changed}/>
     }
